@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+html{
+    width: 100vw;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+
+    background-color: var(--Very-light-gray-background-headings-buttons);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wrap_container{
+
+    width: 100%;
+    height: 1320px;
+
+    margin: 30px auto 0;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.card_styles{
+
+    width: 330px;
+    height: 440px;
+
+    padding-top: 44px;
+    padding-bottom: 60px;
+    padding-left: 46px;
+    padding-right: 32px;
+
+    font-size: 15px;
+    text-align: left;
+    
+}
+
+.card_1_container{
+
+    background-color: var(--Bright-orange);
+
+}
+
+.card_2_container{
+
+    background-color: var(--Dark-cyan);
+
+}
+
+.card_3_container{
+
+    background-color: var(--Very-dark-cyan);
+
+}
+
+.title_style{
+
+    margin-bottom: 40px;
+
+    color: var(--Very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+}
+
+.paragraph_style{
+
+    margin-bottom: 26px;
+
+    color: var(--Transparent-white-paragraphs);
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif; 
+
+}
+
+.buttom_container{
+
+    width: 148px;
+    height: 48px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Very-light-gray-background-headings-buttons);
+
+}
+
+.buttom_style{
+    
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+
+.buttom_1{
+
+    color: var(--Bright-orange);
+}
+
+.buttom_1:hover{
+
+    cursor: pointer;
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+
+}
+
+.buttom_2{
+    color: var(--Dark-cyan);
+}
+
+.buttom_2:hover{
+
+    cursor: pointer;
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+
+}
+
+.buttom_3{
+    color: var(--Very-dark-cyan);
+}
+
+.buttom_3:hover{
+
+    cursor: pointer;
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray-background-headings-buttons);
+    border: 2px solid var(--Very-light-gray-background-headings-buttons);
+
+}
+
+.icon_container{
+    margin-bottom: 40px;
+}
+
+@media (min-width: 930px){
+
+    .wrap_container{
+
+        width: 100%;
+        height: 100%;
+
+        flex-direction: row;
+    
+    }
+
+    .card_styles{
+
+        width: 300px;
+        height: 500px;
+        
+    }
+}
+
+@media (min-width: 760px) and (max-width: 930px){
+    
+    .wrap_container{
+        zoom: 75%;
+        width: 100%;
+        height: 100%;
+
+        flex-direction: row;
+    
+    }
+
+    .card_styles{
+
+        width: 300px;
+        height: 500px;
+        
+    }
+
+}
+
+@media (min-width: 620px) and (max-width: 760px){
+    
+    .wrap_container{
+        zoom: 60%;
+        width: 100%;
+        height: 100%;
+
+        flex-direction: row;
+    
+    }
+
+    
+    .card_styles{
+
+        width: 300px;
+        height: 500px;
+        
+    }
+}
